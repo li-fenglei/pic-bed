@@ -75,7 +75,7 @@
           <mxGeometry height="80" width="250" x="-210" y="40" as="geometry" />
         </mxCell>
         <mxCell id="NUp_doBWv6ELmDupMHH7-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;题型：extra4&lt;br&gt;难度：extra3&lt;br&gt;课程：extra3&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="110" x="-290" y="400" as="geometry" />
+          <mxGeometry height="70" width="120" x="-310" y="450" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
