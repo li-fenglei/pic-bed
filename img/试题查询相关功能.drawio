@@ -87,7 +87,7 @@
           <mxGeometry height="120" width="390" x="-760" y="155" as="geometry" />
         </mxCell>
         <mxCell id="ln8jJZKtFzEzfMzB03-1-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;1、一直点击下一页点击如果后端返回为空 会直接清前端缓存重新拉取试题。&lt;/div&gt;&lt;div&gt;2、下一页每次最多只允许点9次，因为初始化为1次。然后需要点击换一批进行换题，满4次之后会清除缓存进行重置&lt;/div&gt;&lt;div&gt;3、每次单独点击换一批只会保存当前页的5道题，然后换一批的时候不会再出现，如果题少多次点击之后有可能会有重复&lt;/div&gt;&lt;div&gt;4、如果200道题之后再点击换一批会清缓存重置&lt;/div&gt;" vertex="1">
-          <mxGeometry height="140" width="490" x="-710" y="390" as="geometry" />
+          <mxGeometry height="140" width="490" x="-750" y="370" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
