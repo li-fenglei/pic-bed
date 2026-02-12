@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.3.0">
+  <diagram name="第 1 页" id="Bja3JT4YhDKP1pCNeVQ1">
+    <mxGraphModel dx="1132" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g4fw7l2qgGYOYM_Z4ynk-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="50" width="130" x="70" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="g4fw7l2qgGYOYM_Z4ynk-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;问题：&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;1. 调嵌入模型接口进行向量化的时机？上传试题时，落库后要进行向量化；从学科网拉回的试题，拉取后也要进行向量化。&lt;br&gt;2. 相似度计算查询时可以1对多，比如“查询与目标ID最相似的 TopK 条记录”，这样是不是就不需要持久化相似关系及相似度了&lt;br&gt;3. 试题向量化时题干传多长？越长成本越高，同一试题选取题干长度不同，向量结果则不一样，进而影响相似度计算&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;4. 凡是涉及到向量化结果落库和相似度查询时，要分别进行Mysql和PostgreSql不同数据库间的操作，这其中会不会有什么别的问题？&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="830" x="60" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="g4fw7l2qgGYOYM_Z4ynk-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;方案：&lt;br&gt;使豆包的嵌入模型（&lt;/span&gt;&lt;span style=&quot;font-size: 14px; color: rgb(140, 108, 65); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: rgb(255, 255, 255);&quot;&gt;doubao-embedding-vision-251215&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;）进行向量化处理，向量结果使用&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PostgreSql+pgvector进行存储&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;pgvector由C实现，内置相似度算法，直接写sql就可以完成相似度计算查询。&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="880" y="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
