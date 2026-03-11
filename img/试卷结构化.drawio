@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.2">
+  <diagram name="第 1 页" id="RXbYcHryNyQ2UYKsKD2B">
+    <mxGraphModel dx="1136" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;不用AI&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="30" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;金卷作业的模式：严格设置规则，按规则制作word&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Pass&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;用AI&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="270" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;转换为Html&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;转换为图片（一张长图）&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;AI识别Html&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="75" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;超过token限制，不相干字符非常多，过滤后仍然很多&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="30" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;AI识别图片&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="495" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;提取每个试题开始、结束的关键字；得到关键字列表后用Aspose按照关键字进行试题拆分&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="400" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Pass&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="75" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;大模型对图片友好，普遍支持10M大小的图片&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="380" x="380" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="tgIzKifxFUrtzAtUx8xo-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;图片识别的准确性直接影响后续试题的分割结果&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="330" x="395" y="827" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
